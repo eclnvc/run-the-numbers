@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run The Numbers</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container-fluid header">
+    <h1>Run The Numbers</h1>
+</div>
+
+<nav id="mySidebar" class="sidebar bg-dark">
+    <a href="javascript:void(0)" class="close-btn text-light" onclick="closeNav()">&times;</a>
+    <a href="#" class="nav-link text-light">Overview</a>
+    <a href="#" class="nav-link text-light">Sports</a>
+    <a href="#" class="nav-link text-light">Finances</a>
+    <a href="#" class="nav-link text-light">Politics</a>
+    <a href="#" class="nav-link text-light">Other</a>
+</nav>
+
+<div class="main-content">
+    <button class="open-btn btn btn-danger" onclick="openNav()">&#9776; Open Sidebar</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <h2 class="text-danger mt-4">Welcome to Run The Numbers</h2>
+                <p class="text-dark">Your go-to platform for statistical insights across various domains.</p>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-header bg-dark text-white">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-danger">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap and jQuery scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.querySelector(".main-content").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.querySelector(".main-content").style.marginLeft= "0";
+    }
+</script>
+
+</body>
+</html>
