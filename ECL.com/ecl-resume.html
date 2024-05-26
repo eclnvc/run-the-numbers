@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Edward Lorentz</title>
+    <link rel="stylesheet" href="ecl.css">
+</head>
+<body>
+
+<nav id="mySidebar" class="sidebar bg-dark">
+    <a href="javascript:void(0)" class="close-btn text-light" onclick="closeNave()">&times;</a>
+    <a href="ecl.html" class="nav-link text-light">Home</a>
+    <a href="ecl-projects.html" class="nav-link text-light">Projects</a>
+</nav>
+
+<div class="main-content">
+    <button class="open-btn btn btn-danger" onclick="openNav()">&#9776;</button>
+    <div class="container">
+        <h1>Select a CV to View</h1>
+        <label for="cv-select">Choose a CV:</label>
+        <select id="cv-select">
+            <option value="">--Please choose an option--</option>
+            <option value="https://eclnvc.github.io/ECL/ECL_DataAnalyst.pdf">Data Analyst</option>
+            <option value="http://remote.url.tld/path/to/data_entry_specialist.doc">Data Entry Specialist</option>
+            <option value="http://remote.url.tld/path/to/front_desk_receptionist.doc">Front-Desk/Receptionist</option>
+            <option value="http://remote.url.tld/path/to/general.doc">General</option>
+        </select>
+        <button id="view-button">View CV</button>
+        <div class="iframe-container" id="iframe-container"></div>
+    </div>
+</div>
+
+<script src="ecl.js"></script>
+</body>
+</html>
